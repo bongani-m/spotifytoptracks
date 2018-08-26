@@ -1,0 +1,232 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #212a3a;
+}
+
+.title {
+  font-family: 'Share Tech', sans-serif;
+}
+
+.App {
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  text-align: center;
+  background-color: #212a3a;
+  height: 150px;
+  padding: 2.5em;
+  color: white;
+}
+
+.App-title {
+  font-size: 2em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.cta-container {
+  background: white;
+  box-shadow: #dadada 0 2px 2px;
+  font-weight: 600;
+  flex-direction: row;
+  margin: auto;
+}
+
+.cta {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 50vw;
+  margin: auto;
+  padding: .7em;
+}
+
+.cta-child {
+  flex-grow: 1;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  transition: .5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+  background: #67d961;
+  border: 2px solid #67d961;
+  border-radius: 3px;
+  font-weight: 600;
+  color:  white !important;
+  text-align: center;
+  padding: 4px 0em;
+}
+
+.cta-title {
+  margin-top: 7px;
+}
+
+.cta-title a {
+  color: #67d961;
+  transition: .5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.cta-title a:hover {
+  color: #212a3a;
+}
+
+.btn:hover {
+  color: #212a3a !important;
+  background: white;
+  border: 2px solid #212a3a;
+}
+
+.no-show {
+  text-align: center;
+}
+
+
+.profile {
+  margin: 2em;
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+}
+
+.container h3 {
+  margin: 0 1em;
+}
+
+.last {
+  padding-bottom: 4em; 
+}
+
+.tracks {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  
+  width: 80vw;
+  margin-left: 10vw;
+  margin-top: 4em;
+  /* text-align: center; */
+} 
+
+
+
+.trackImage {
+  height: calc(80vw/4 - 1vw);
+  width: calc(80vw/4 - 1vw);
+  margin-left: .5vw;
+  margin-right: .5vw;  
+}
+
+.artist-info {
+  width: calc(80vw/4 - 1vw);
+  margin-left: .5vw;
+  text-align: center;
+}
+
+  @media screen and (max-width: 1024px) {
+    
+  .tracks {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    width: 80vw;
+    margin-left: 10vw;
+    margin-top: 4em;
+    /* text-align: center; */
+  } 
+
+
+
+  .trackImage {
+    height: calc(80vw/3 - 1vw);
+    width: calc(80vw/3 - 1vw);
+    margin-left: .5vw;
+    margin-right: .5vw;  
+  }
+
+  .artist-info {
+    width: calc(80vw/3 - 1vw);
+    margin-left: .5vw;
+    text-align: center;
+  }
+  }
+@media screen and (max-width: 769px) {
+  .tracks {
+    
+    width: 80vw;
+    margin-left: 10vw;
+    /* text-align: center; */
+  } 
+  
+  
+  .trackImage {
+    height: 80vw;
+    width: 80vw;
+  }
+  
+  .artist-info {
+    width: 80%;
+    margin-left: 10%;
+    text-align: center;
+  }
+}
+
+
+
+.type {
+  text-align: center;
+}
+
+a {
+  
+  color: #67d961;
+}
+
+.create-playlist   {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  margin: auto;
+  padding: 0;
+  position: fixed;
+  bottom: 0;
+  z-index: 999;
+  background: white;
+}
+
+.playlistContainer {
+  width: 50vw;
+  margin-left: 25vw;
+  display: flex;
+  flex-direction: row;
+  padding: 1em;
+
+}
+  
+  @media screen and (max-width: 767px) {
+    .cta {
+      display: flex;
+      flex-wrap: nowrap;
+      width: auto;
+      margin: auto;
+      padding: .7em;
+    }
+    .playlistContainer {
+      width: 95vw;
+      margin-left: 1vw;
+    }
+  }
