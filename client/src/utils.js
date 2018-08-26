@@ -30,7 +30,7 @@ class Utils {
 
         var options = { method: 'GET',  mode: 'cors' };
 
-        var uri = 'http://localhost:8888/refresh_token?refresh_token=' + sessionStorage.getItem('refreshToken');
+        var uri = 'https://spotifytoptracks.herokuapp.com/refresh_token?refresh_token=' + sessionStorage.getItem('refreshToken');
         try { 
         var response = await fetch(uri, options);
         var data = await response.json();
