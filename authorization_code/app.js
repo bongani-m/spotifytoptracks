@@ -14,7 +14,7 @@ var cookieParser = require('cookie-parser');
 
 var client_id = '8791724205de43b9bcea00d155192b4f'; // Your client id
 var client_secret = 'ebb19f68f09949158f9120093eb6eeb5'; // Your secret
-var redirect_uri = 'https://bonganimbigi.com/spotifytoptracks/callback'; // Your redirect uri
+var redirect_uri = 'https://spotifytoptracks.herokuapp.com/callback'; // Your redirect uri
 
 /**
  * Generates a random string containing numbers and letters
