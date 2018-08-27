@@ -32,7 +32,7 @@ class App extends Component {
          <div className="cta">
          <div className="cta-child cta-title">Built by <a href="http://bonganimbigi.com">@bongani</a></div>
          {(!Utils.hasToken()) ? 
-            <a href='http://localhost:8888/login'  className="cta-child btn">Login</a>
+            <a href='https://spotifytoptracks.herokuapp.com/login'  className="cta-child btn">Login</a>
             : 
             <a onClick={()=> Utils.createPlaylist()}  className="cta-child btn">Create Playlist</a>
           }
